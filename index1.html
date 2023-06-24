@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h4,
+        h5,
+        h6 {
+            margin: 10px 0px;
+        }
+
+        a {
+            color: #5D96DB;
+            text-decoration: none;
+        }
+
+        .pointer {
+            top: 4px;
+            left: -37px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: #252932;
+        }
+
+        .icon {
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: #252932;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .section {
+            border-left-width: 3px;
+            border-left-style: solid;
+            padding-left: 30px;
+            padding-top: 1px;
+            margin-left: 20px;
+            border-color: #d5d6d6;
+        }
+
+        .section.section-without-border {
+            border: none;
+        }
+
+        .section .content p,
+        .section .content ul {
+            margin-bottom: 0;
+        }
+
+        .section h3 {
+            display: flex;
+            position: relative;
+            left: -47px;
+        }
+
+        .section h3 .txt {
+            margin-top: 5px;
+        }
+
+        .section .dates {
+            left: -120px;
+            position: absolute;
+            width: 80px;
+        }
+
+        .section-without-border h3 {
+            left: 0;
+        }
+
+        ul.bold,
+        span.bold {
+            font-weight: 600;
+        }
+
+        body.github {
+            font-size: 18px;
+            line-height: 1.2;
+            background-color: #f5f6fa
+        }
+
+        #main-container {
+            padding: 15px; 
+            position: relative; 
+            display: flex; 
+            flex-direction: column;
+            width: 920px;
+        }
+        body.github  #main-container {
+            flex-direction: row;
+            width: unset;
+        }
+        .right-section {
+            display: flex; 
+            padding-left: 40px;
+        }
+        .right-section .first-row {
+            width: 65%;
+        }
+
+        body.github .right-section {
+            display: block;
+            padding-left: 0;
+            margin-top: 105px;
+        }
+
+        body.github .right-section .first-row {
+            width: unset;
+        }
+        body.github .section.section-without-border {
+            padding-left: 0;
+        }
+
+        @keyframes highlight {
+            0% { box-shadow: 0 0 0 0px rgba(255, 66, 00, 1) }
+            70% { box-shadow: 0 0 0 10px rgba(255, 66, 00, 0)}
+            100% { box-shadow: 0 0 0 0px rgba(255, 66, 00, 0) }
+        }
+        body.github .skill {
+            animation: highlight 2s infinite;
+        }
+    </style>
+</head>
+
+<body class='github'>
+    <div id='main-container'>
+        <div style="padding-left: 85px">
+            <div>
+                <div class="entry" style="display: flex;">
+                    <!-- <div>
+                        <img src="https://raw.githubusercontent.com/shibapanigrahi/images/master/my%20profile%20pic.JPG" style="width: 80px; border-radius: 50%;" />
+                    </div> -->
+                    <div style="margin: 25px;">
+                        <h3 style='margin: 0;'>
+                            <span class="firstname">Shiba Shankar</span>
+                            <span class="lastname">Panigrahi</span>
+                        </h3>
+                        <h4 style='margin: 0;'>Vice President</h4>
+                        <h5 style='margin: 0;'><img width="20" height="20" src="phone.svg"> +91 9003096395</h5>
+                        <h5 style='margin: 0;'><a href="mailto:shibashankar01@gmail.com"><img width="20" height="20" src="mail.png"></a> 
+                          <a href="https://www.linkedin.com/in/shibashankarp/"><img width="20" height="20" src="linkedin.svg"></a> 
+                          <a href="https://github.com/shibapanigrahi"><img width="20" height="20" src="git.svg"></a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="title">
+                    <span class="icon">
+                        <img src="summary icon.svg" />
+                    </span>
+                    <span class="txt">Summary</span>
+                </h3>
+                <div class="content">
+                    <div class="entry" style="position: relative">
+                        <div class="pointer"></div>
+                        <div class="text">
+                            <p> Senior Software Developer with 11 years of experience building robust industry-grade applications 
+                              using Java/J2EE, Spring, Angular, Hibernate, SQL and AWS cloud services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+              <h3 class="title">
+                  <span class="icon skill">
+                      <img src="skills icon.svg" />
+                  </span>
+                  <span class="txt">Skills</span>
+              </h3>
+              <div class="content">
+                  <div>
+                      <div class="pointer"></div>
+                      <ul class='bold'>
+                          <li>
+                            Java, Spring Boot, Hibernate, Python
+                          </li>
+                          <li>
+                            JavaScript, TypeScript, Angular 8, Redux, NgRx, ES6, CSS, HTML, CyPress, Jest
+                          </li>
+                          <li>
+                            Database: Mongo, Sybase
+                          </li>
+                          <li>
+                            AWS, Terraform, Ansible, GitLab, JIRA, Zipkin, Grafana
+                          </li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+            <div class="section sectionExperience">
+                <h3 class="title">
+                    <span class="icon">
+                        <img src="experience icon.svg" />
+                    </span>
+                    <span class="txt">Experience</span>
+                </h3>
+                <div>
+                    <div class="entry" style="min-height: 36px; position: relative;">
+                        <div class="pointer"></div>
+                        <div class="dates">
+                            <span>Aug-2015</span>
+                            <span>-</span>
+                            <span>Present</span>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Vice President</h4>
+                            <h5><a href="https://www.goldmansachs.com">Goldman Sachs</a></h5>
+                            
+                            <div class="text">
+
+                                <p>
+                                    <b>Advisor Desktop</b>
+                                </p>
+                                <ul>
+                                    <li>Gathering functional and technical requirements for FI Analytics and Client Dashboard.</li>
+                                    <li>Successfully delivered Client Dashboard for</li>
+                                    <li>Engagement included brainstorming solutions with PWM Advisors and leading team of three to build out front to back system</li>
+                                </ul>
+                              
+                                <p>
+                                    <b>IMD Risk Engineering:</b>
+                                </p>
+                                <ul>
+                                    <li>Gathering functional and technical requirements for <a href="https://www.sec.gov/files/formpf.pdf">FormPF</a> & <a href="https://www.sec.gov/comments/jobs-title-i/general/general-26.pdf"> AIFMD </a> (Alternative Investment Fund Manager Directive) regulator project and completed it.</li>
+                                    <li>Gathering functional and technical requirements for Model Liquidity Outflow (MLO) project and completed it. </li>
+                                    <li>End-To-End ownership of IMD Risk Management Dashboard. </li>
+                                    <li>UI Lead for Liquidity Risk Dashboard.</li>
+                                    <li>Engagement included brainstorming solutions with Risk users and leading team of three to build out entire front-end and server stack.</li>
+                                </ul>
+
+                                <p>
+                                  <b>COOKIE:</b>
+                                </p>
+                                <ul>
+                                    <li>Worked for a brief period of 8 months building out cloud capability for <a href="https://www.apple.com/apple-card/">Apple Card</a>.</li>
+                                    <li>Owned the Bamboo Automation effort and assisted AWS Deployment.</li>
+                                </ul>
+
+                                <p>
+                                  <b>GSAM Central Trading:</b>
+                                </p>
+                                <ul>
+                                    <li>Developed GSAM Data Browser, a popular in-house support tool, from scratch. A light-weight smart web tool which queries data from various sources like Gemfire(Apache Geode), Sybase, Mongo DB, Data Lake etc.</li>
+                                    <li>MIFID II Project for trade reporting.</li>
+                                    <li>Completed CACE Audit Report, CACE Migration from AIS Desk to use CTD desk, Rigel Order loader.</li>
+                                    <li>Built various enhancement modules for both RIGEL and LEO (In-house Order Management Systems)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="min-height: 36px; position: relative;">
+                        <div class="pointer"></div>
+                        <div class="dates">
+                            <span>Nov-2012</span>
+                            <span>-</span>
+                            <span>Aug-2015</span>
+                        </div>
+                        <div class="content">
+                          <h4 class="title">Software Engineer</h4>
+                          <h5><a href="https://amzetta.com/">American Megatrends India Pvt. Ltd.</a></h5>
+                          <h5></h5>
+                          <div class="text">
+                            <p>
+                              <b><a href="http://www.amiindia.co.in/bios-firmware/veb-development-environment">Visual eBIOS</a> :</b>
+                            </p>
+                            <ul>
+                                <li>Worked as an individual contributor.</li>
+                                <li>Responsible for development of individual modules like AMIBIOS, ParseVeB, CSF integration. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="min-height: 36px; position: relative;">
+                      <div class="pointer"></div>
+                      <div class="dates">
+                          <span>Feb-2012</span>
+                          <span>-</span>
+                          <span>Nov-2012</span>
+                      </div>
+                      <div class="content">
+                        <h4 class="title">Intern</h4>
+                            <h5><a href="https://www.nic.in/">National Informatic Center</a></h5>
+                            <h5></h5>
+                            <div class="text">
+                                  <li>Worked in PHEO project for document parsing.</li>
+                              </ul>
+                            </div>
+                          
+
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="section sectionEducation">
+                <h3 class="title">
+                    <span class="icon">
+                        <img src="education icon.svg" />
+                    </span>
+                    <span class="txt">Education</span>
+                </h3>
+                <div>
+                    <div class="entry" style="min-height: 18px; position: relative;">
+                        <div class="pointer"></div>
+                        <div class="dates" style="margin-top: 1px;">
+                            <span>2009</span>
+                            <span>-</span>
+                            <span>2012</span>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Berhampur University</h5>
+                                <div class="text">
+                                    <div>
+                                        Master in Computer Application,
+                                        <span class='bold'>85%</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="entry" style="min-height: 18px; position: relative;">
+                        <div class="pointer"></div>
+                        <div class="dates" style="margin-top: 1px;">
+                            <span>2006</span>
+                            <span>-</span>
+                            <span>2009</span>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Berhampur University</h5>
+                                <div class="text">
+                                    <div>
+                                        B.Sc. Computer Science,
+                                        <span class='bold'>79%</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
